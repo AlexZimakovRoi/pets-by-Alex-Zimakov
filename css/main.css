@@ -1,0 +1,15 @@
+.main-container {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-container a {
+    display: flex;
+    width: fit-content;
+}
+
+.main-container a p {
+    padding-right: 0.2vw;
+}

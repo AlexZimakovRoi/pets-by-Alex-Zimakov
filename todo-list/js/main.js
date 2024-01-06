@@ -1,0 +1,1 @@
+export default todoObj = localStorage.getItem('todo') != null ? JSON.parse(localStorage.getItem('todo')) : [];

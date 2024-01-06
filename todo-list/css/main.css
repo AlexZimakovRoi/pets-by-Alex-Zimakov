@@ -1,0 +1,108 @@
+.main-h1 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.main-action-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee11;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5vw;
+
+    height: 5vh;
+}
+
+.main-action-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.main-ico-action {
+    height: 80%;
+}
+
+.main-action-button {
+    background-color: #fff;
+    color: rgba(51, 65, 85, 1);
+
+    padding: .5rem 0.25rem;
+
+    border-radius: 0.5rem;
+
+    transition: 0.2s ease-in-out;
+}
+
+.main-input {
+    width: 80%;
+}
+
+.main-todo-card {
+    display: flex;
+    align-items: center;
+    height: 3vh;
+    gap: 1vw;
+}
+
+.card-action-button {
+    height: 100%;
+}
+
+.card-action-ico {
+    height: 80%;
+    padding: 0 0.5vw;
+}
+
+.main-action-button:hover {
+    background-color: rgba(51, 65, 85, 1);
+    color: #fff;
+}
+
+.main-todo-container {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.main-todo-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+    border-radius: 0.5rem;
+    background-color: #eeeeee11;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+}
+
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+}

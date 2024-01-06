@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List by Alex Zimakov</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <h1 class="main-h1">ToDo List</h1>
+        <div class="main-action-container">
+            <div class="radio-inputs">
+                <label class="radio">
+                    <input id="select-add" type="radio" name="radio" checked="">
+                    <span class="name">ADD</span>
+                </label>
+                <label class="radio">
+                    <input id="select-search" type="radio" name="radio">
+                    <span class="name">SEARCH</span>
+                </label>
+            </div>
+            <div id="add-container" class="main-action-list-container">
+                <img class="main-ico-action" src="images/add.svg" alt="">
+                <input id="add-post-input" placeholder="Add post" type="text" class="main-input">
+                <button id="add-post-button" class="main-action-button">Add post</button>
+            </div>
+            <div id="search-container" class="hide" style="justify-content: flex-start; gap: 1vw;">
+                <img class="main-ico-action" src="images/search.svg" alt="">
+                <input id="search-input" placeholder="Search" type="text" class="main-input">
+            </div>
+        </div>
+        <ol id="todo-container" class="main-todo-container"></ol>
+    </main>
+    <div class="background"></div>
+
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
